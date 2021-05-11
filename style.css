@@ -93,7 +93,7 @@
 
 /* Input & Log In Button */
 .container .login-section .form-section form input,
-.login-section .form-section button {
+.login-section .form-section button[type="submit"] {
   width: 90%;
   height: 50px;
   outline: none;
@@ -103,8 +103,8 @@
   padding: 0 12px;
 }
 
-.login-section .form-section button {
-  width: 98%;
+.login-section .form-section button[type="submit"] {
+  width: calc(90% + 24px);
   font-size: 20px;
   color: #fff;
   background: var(--primary);
@@ -136,11 +136,11 @@
 .login-section .form-section a.createBtn {
   background-color: var(--secondary);
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   font-weight: bolder;
   border-radius: 5px;
-  padding: 15px;
+  padding: 16px;
   margin: 10px 0;
   transition: background 100ms ease-in-out;
 }

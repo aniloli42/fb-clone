@@ -15,15 +15,23 @@
 }
 
 /* Mobile First Approach */
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: var(--accent);
+  justify-content: center;
+  align-items: flex-start;
+}
 /* container */
 .container {
   display: flex;
+  gap: 40px;
   flex-direction: column;
-  background: var(--accent);
+  justify-content: flex-start;
   align-items: center;
-  gap: 7vw;
-  width: 100vw;
-  height: 100vh;
+  width: 80vw;
+  height: 80vh;
 }
 
 /* div.desc */
@@ -32,17 +40,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 420px;
 }
 
 /* Fb Logo */
+.container .desc .title {
+  display: flex;
+  justify-content: center;
+}
+
 .container .desc .title img {
-  width: 60vw;
+  width: 300px;
   height: auto;
 }
+
 /* Description  */
 .container .desc .description {
   font-size: 24px;
-  width: 80%;
+  width: inherit;
   margin: 0 auto;
   font-weight: normal;
   text-align: center;
@@ -53,7 +68,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
   margin: 0 auto;
 }
 
@@ -64,10 +78,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14px;
+  padding: 15px 8px;
   border-radius: 10px;
-  width: 74vw;
-  box-shadow: 0px 2px 10px rgba(131, 102, 102, 0.3);
+  width: 395px;
+  box-shadow: 0px 5px 10px rgba(131, 102, 102, 0.3);
   margin: 0 auto 30px auto;
 }
 
@@ -157,12 +171,34 @@
   text-align: center;
   color: var(--dark);
 }
-
-/* width more than 426px */
-@media (min-width: 426px) {
-}
 /* width more than 768px */
 @media (min-width: 768px) {
+  /* body */
+  body {
+    align-items: center;
+  }
+
+  /* container */
+  .container {
+    flex-direction: row;
+    height: 60%;
+    align-items: flex-start;
+    gap: 80px;
+  }
+
+  /* .container .desc .description */
+  .container .desc {
+    align-items: flex-start;
+    margin: 30px 0 0 90px;
+  }
+
+  /* .container .desc .description */
+  .container .desc .description {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 26px;
+    word-wrap: break-word;
+  }
 }
 /* Common CSS */
 

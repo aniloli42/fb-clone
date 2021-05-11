@@ -1,7 +1,7 @@
 /* Variables */
 :root {
   --primary: #1877f2;
-  --secondary: #38a722;
+  --secondary: #35a51f;
   --accent: #f0f2f5;
   --dark: #000;
   --light: #dddfe2;
@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: column;
   background: var(--accent);
-  justify-content: center;
   align-items: center;
   gap: 7vw;
   width: 100vw;
@@ -32,17 +31,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 /* Fb Logo */
 .container .desc .title img {
-  width: 400px;
-  height: 110px;
+  width: 60vw;
+  height: auto;
 }
 /* Description  */
 .container .desc .description {
   font-size: 24px;
-  width: 400px;
+  width: 80%;
+  margin: 0 auto;
   font-weight: normal;
   text-align: center;
 }
@@ -52,14 +53,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90wv;
+  width: 100vw;
   margin: 0 auto;
-}
-
-/* Create Page */
-.container .login-section p {
-  font-size: 14px;
-  text-align: center;
 }
 
 /* form card */
@@ -69,20 +64,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 16px;
-  border-radius: 2vw;
-  width: 350px;
-  box-shadow: 0px 5px 20px var(--light);
-  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 10px;
+  width: 74vw;
+  box-shadow: 0px 2px 10px rgba(131, 102, 102, 0.3);
+  margin: 0 auto 30px auto;
 }
 
+/* .container .login-section form */
 .container .login-section .form-section form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 10px;
+}
+
+/* login hr */
+.container .login-section .form-section hr {
+  width: 100%;
+  margin: 20px 0;
+  border-width: 1px;
+  border-color: rgb(243, 238, 238);
+  border-bottom: none;
+  opacity: 0.3;
 }
 
 /* Input & Log In Button */
@@ -94,15 +100,21 @@
   border-radius: 5px;
   border: 1px solid var(--light);
   font-size: 16px;
-  padding: 0 15px;
+  padding: 0 12px;
 }
 
 .login-section .form-section button {
-  width: 100%;
+  width: 98%;
   font-size: 20px;
   color: #fff;
-  background-color: var(--primary);
+  background: var(--primary);
   font-weight: bold;
+  transition: background 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.login-section .form-section button:hover {
+  background: #0f6eeb;
 }
 
 .container .login-section .form-section form input:focus {
@@ -116,15 +128,49 @@
 
 /* Forget Password */
 .container .login-section .form-section a {
-  text-decoration: none;
   opacity: 0.8;
   font-size: 14px;
 }
 
-.container .login-section .form-section a:hover {
-  text-decoration: underline;
+/* Create Account */
+.login-section .form-section a.createBtn {
+  background-color: var(--secondary);
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: background 100ms ease-in-out;
 }
 
+.login-section .form-section a.createBtn:hover {
+  background: #268615;
+  text-decoration: none;
+}
+
+/* Create Page */
+.container .login-section p,
+.login-section p a {
+  font-size: 14px;
+  text-align: center;
+  color: var(--dark);
+}
+
+/* width more than 426px */
+@media (min-width: 426px) {
+}
 /* width more than 768px */
 @media (min-width: 768px) {
+}
+/* Common CSS */
+
+/* Common Btn rule */
+.common-btn {
+  text-decoration: none;
+}
+
+.common-btn:hover {
+  text-decoration: underline;
 }

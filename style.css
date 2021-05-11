@@ -59,8 +59,8 @@ body {
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  max-width: 80%;
-  min-width: 70%;
+  max-width: 90%;
+  min-width: 75%;
 }
 
 /* Login Section */
@@ -68,7 +68,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
+  margin: 0 auto;
 }
 
 /* form card */
@@ -80,10 +81,11 @@ body {
   align-items: center;
   padding: 15px 8px;
   border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
+  width: 300px;
   box-shadow: 0px 5px 10px rgba(131, 102, 102, 0.3);
-  margin: 0 auto 30px auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* .container .login-section form */
@@ -173,7 +175,7 @@ body {
   color: var(--dark);
 }
 /* width more than 768px */
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   /* body */
   body {
     align-items: center;
@@ -191,20 +193,25 @@ body {
   /* .container .desc .description */
   .container .desc {
     align-items: flex-start;
-    margin: 30px 0 0 90px;
+    margin: 30px 100px 0 90px;
   }
 
   /* .container .desc .description */
   .container .desc .description {
     text-align: left;
-    margin-left: 30px;
     font-size: 26px;
+    max-width: 480px;
+    margin-left: 30px;
     word-wrap: break-word;
   }
 
   /* Login Section */
   .container .login-section {
-    min-width: 400px;
+    width: inherit;
+  }
+
+  .container .login-section .form-section {
+    width: 360px;
   }
 }
 /* Common CSS */

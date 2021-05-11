@@ -1,6 +1,6 @@
 ## Fb Clone design
 
-![Project Image](design.png)
+![fb clone design image](img/design.png)
 
 > For portifolio and practice
 

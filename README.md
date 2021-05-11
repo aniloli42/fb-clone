@@ -18,6 +18,8 @@
 
 This is actually made for practice purpose. It is not use for any other purpose, It project can include in my portifolio.
 
+To See the demo: [Click Here](https://raw.githack.com/aniloli42/fb-clone/master/index.html)
+
 #### Technologies
 
 - HTML
